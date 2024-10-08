@@ -49,6 +49,13 @@ const App = () => {
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Enter your password"
           />
+           <input
+            type="password"
+            id="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Enter your password"
+          />
         </div>
         {error && <p className="error">{error}</p>}
         <button type="submit" className="login-button">Login</button>
